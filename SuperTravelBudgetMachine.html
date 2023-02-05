@@ -5,33 +5,40 @@
 <head>
     <title>Super Travel Budget Machine</title>
     <style>
-        p   {color:blueviolet; text-align: center;}
-        table, td, th { 
-            border: 5px solid rgb(245, 215, 169); 
-            color:rgb(245, 215, 169);
-            border-collapse: collapse;
-            background-color: blueviolet;
+        p {
+            color:blueviolet; 
+            text-align: center;
         }
+
+        table, td, th { 
+            border-collapse: collapse;
+        }
+
         .center {
             margin-left: auto; 
-            margin-right: auto;}
+            margin-right: auto;
+        }
+        
         .pop {
             color:blueviolet; 
             text-align: center; 
-            text-shadow: 2px 0px 5px;}
-        table, td, th, button, select {      
-            color:rgb(245, 215, 169); 
+            text-shadow: 2px 0px 5px;
+        }
+        
+        td, th, button, select {      
             background-color: blueviolet; 
             border: 5px outset darkmagenta; 
             border-radius: 5px;
             color:rgb(245, 215, 169);
         }
+        
         button, select {
             display: block;
         }
+        
         .buttonsTable {
             border: 0px; 
-            color:rgb(245, 215, 169);
+            border-radius: 0px;
             background-color: rgb(245, 215, 169);
         }
     </style>
@@ -42,7 +49,7 @@
     <p class="pop">Please enter your expenses below!</p>
     <form action="SuperTravelBudgetMachine.html" method="get">
         <!-- table for the buttons -->
-        <table class="buttonsTable; center">
+        <table class="center" style="margin-bottom: 10px;">
             <tr class="buttonsTable">
                 <td class="buttonsTable">
                     <select name="Country">
@@ -66,27 +73,27 @@
             </tr>
 
             <tr>
-                <td>Plane Tickets</td> <td><input type="text" name="plane" placeholder="Enter US Dollars"></td> <td>Foreign Currency</td>
+                <td>Plane Tickets</td> <td><input type="number" name="plane" placeholder="Enter US Dollars"></td> <td>Foreign Currency</td>
             </tr>
 
             <tr>
-                <td>Bus</td> <td><input type="text" name="bus" placeholder="Enter US Dollars"></td> <td>Foreign Currency</td>
+                <td>Bus</td> <td><input type="number" name="bus" placeholder="Enter US Dollars"></td> <td>Foreign Currency</td>
             </tr>
 
             <tr>
-                <td>Train</td> <td><input type="text" name="train" placeholder="Enter US Dollars"></td> <td>Foreign Currency</td>
+                <td>Train</td> <td><input type="number" name="train" placeholder="Enter US Dollars"></td> <td>Foreign Currency</td>
             </tr>
 
             <tr>
-                <td>Rental Car</td> <td><input type="text" name="car" placeholder="Enter US Dollars"></td> <td>Foreign Currency</td>
+                <td>Rental Car</td> <td><input type="number" name="car" placeholder="Enter US Dollars"></td> <td>Foreign Currency</td>
             </tr>
 
             <tr>
-                <td>Gasoline</td> <td><input type="text" name="gas" placeholder="Enter US Dollars"></td> <td>Foreign Currency</td>
+                <td>Gasoline</td> <td><input type="number" name="gas" placeholder="Enter US Dollars"></td> <td>Foreign Currency</td>
             </tr>
 
             <tr>
-                <td>Rideshare/Taxi</td> <td><input type="text" name="taxi" placeholder="Enter US Dollars"></td> <td>Foreign Currency</td>
+                <td>Rideshare/Taxi</td> <td><input type="number" name="taxi" placeholder="Enter US Dollars"></td> <td>Foreign Currency</td>
             </tr>
 
             <!-- FOOD -->
@@ -95,23 +102,23 @@
             </tr>
 
             <tr>
-                <td>Breakfast</td> <td><input type="text" name="breakfast" placeholder="Enter US Dollars"></td> <td>Foreign Currency</td>
+                <td>Breakfast</td> <td><input type="number" name="breakfast" placeholder="Enter US Dollars"></td> <td>Foreign Currency</td>
             </tr>
 
             <tr>
-                <td>Lunch</td> <td><input type="text" name="lunch" placeholder="Enter US Dollars"></td> <td>Foreign Currency</td>
+                <td>Lunch</td> <td><input type="number" name="lunch" placeholder="Enter US Dollars"></td> <td>Foreign Currency</td>
             </tr>
 
             <tr>
-                <td>Dinner</td> <td><input type="text" name="lunch" placeholder="Enter US Dollars"></td> <td>Foreign Currency</td>
+                <td>Dinner</td> <td><input type="number" name="lunch" placeholder="Enter US Dollars"></td> <td>Foreign Currency</td>
             </tr>
 
             <tr>
-                <td>Snacks</td> <td><input type="text" name="snacks" placeholder="Enter US Dollars"></td> <td>Foreign Currency</td>
+                <td>Snacks</td> <td><input type="number" name="snacks" placeholder="Enter US Dollars"></td> <td>Foreign Currency</td>
             </tr>
 
             <tr>
-                <td>Drinks</td> <td><input type="text" name="drinks" placeholder="Enter US Dollars"></td> <td>Foreign Currency</td>
+                <td>Drinks</td> <td><input type="number" name="drinks" placeholder="Enter US Dollars"></td> <td>Foreign Currency</td>
             </tr>
         </table>
 

@@ -4,6 +4,7 @@
 
 <head>
     <title>Super Travel Budget Machine</title>
+    <script src="functioning.js"></script>
     <style>
         p {
             color:blueviolet; 
@@ -52,7 +53,7 @@
         <table class="center" style="margin-bottom: 10px;">
             <tr class="buttonsTable">
                 <td class="buttonsTable">
-                    <select name="Country">
+                    <select id="selector" name="Country">
                         <option>Select a Country!</option>
                         <option value="Spain">Spain</option>
                         <option value="Italy">Italy</option>
@@ -61,7 +62,7 @@
                         <option value="Japan">Japan</option>
                     </select>
                 </td>
-                <td class="buttonsTable"><button>Convert!</button></td>
+                <td class="buttonsTable"><button type="button" onclick="calculate();">Convert!</button></td>
             </tr>
         </table>
 
@@ -73,7 +74,7 @@
             </tr>
 
             <tr>
-                <td>Plane Tickets</td> <td><input type="number" name="plane" placeholder="Enter US Dollars"></td> <td>Foreign Currency</td>
+                <td>Plane Tickets</td> <td><input type="number" id="planeIn" name="plane" placeholder="Enter US Dollars"></td> <td id="planeOut">Foreign Currency</td>
             </tr>
 
             <tr>

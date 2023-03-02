@@ -1,0 +1,137 @@
+<!doctype html>
+<!---->
+<html>
+
+<head>
+    <title>Super Travel Budget Machine</title>
+    <script src="functioning.js"></script>
+    <link rel="stylesheet" href="formatting.css">
+</head>
+
+<body style="background-color:rgb(245, 215, 169)">
+    <h1 class="pop"><b><u>Super Travel Budget Machine!</u></b></h1> 
+    <p class="pop">Please enter your expenses below!</p>
+    <form action="SuperTravelBudgetMachine.html" method="get">
+        <!-- table for the buttons -->
+        <table class="center" style="position:relative; margin-bottom:20px; left:6.5%;">
+            <tr class="buttonsTable">
+                <td class="buttonsTable">
+                    <select id="selector" name="Country">
+                        <option value="">Select a Country!</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="euro">Belgium</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="brazil">Brazil</option>
+                        <option value="canada">Canada</option>
+                        <option value="chile">Chile</option>
+                        <option value="china">China</option> 
+                        <option value="colombia">Colombia</option> 
+                        <option value="euro">Frace</option>
+                        <option value="euro">Germany</option>
+                        <option value="euro">Greece</option>
+                        <option value="euro">Italy</option>
+                        <option value="japan">Japan</option>
+                        <option value="euro">Netherlands</option>
+                        <option value="paraguay">Paraguay</option>
+                        <option value="peru">Peru</option>
+                        <option value="euro">Portugal</option>
+                        <option value="russia">Russia</option>
+                        <option value="euro">Spain</option>
+                        <option value="turkey">Turkey</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="venezuela">Venezuela</option> 
+                    </select>
+                </td>
+                <td class="buttonsTable">
+                    <button type="button" onclick="calculate();">Convert!</button>
+                </td>
+            </tr>
+        </table>
+
+        <!-- table for expenses -->
+        <table class="center info">
+            <!-- TRANSPORTATION -->
+            <tr>
+                <th class="infoData">Transportation</th> 
+                <th class="infoData">US Dollars</th> 
+                <th class="infoData foreignCurrencyHeader">Foreign Currency</th>
+            </tr>
+
+            <tr>
+                <td class="infoData">Plane Tickets</td> 
+                <td class="infoData"><input type="number" id="planeIn" name="plane" placeholder="Enter US Dollars"></td> 
+                <td class="infoData" id="planeOut">---</td>
+            </tr>
+
+            <tr>
+                <td class="infoData">Bus</td> 
+                <td class="infoData"><input type="number" id="busIn" name="bus" placeholder="Enter US Dollars"></td> 
+                <td class="infoData" id="busOut">---</td>
+            </tr>
+
+            <tr>
+                <td class="infoData">Train</td>
+                <td class="infoData"><input type="number" id="trainIn" name="train" placeholder="Enter US Dollars"></td> 
+                <td class="infoData" id="trainOut">---</td>
+            </tr>
+
+            <tr>
+                <td class="infoData">Rental Car</td>
+                <td class="infoData"><input type="number" id="rentalIn" name="car" placeholder="Enter US Dollars"></td> 
+                <td class="infoData" id="rentalOut">---</td>
+            </tr>
+
+            <tr>
+                <td class="infoData">Gasoline</td> 
+                <td class="infoData"><input type="number" id="gasIn" name="gas" placeholder="Enter US Dollars"></td> 
+                <td class="infoData" id="gasOut">---</td>
+            </tr>
+
+            <tr>
+                <td class="infoData">Rideshare/Taxi</td> 
+                <td class="infoData"><input type="number" id="rideshareIn" name="taxi" placeholder="Enter US Dollars"></td> 
+                <td class="infoData" id="rideshareOut">---</td>
+            </tr>
+
+            <!-- FOOD -->
+            <tr>
+                <th class="infoData">Food</th> 
+                <th class="infoData">US Dollars</th> 
+                <th class="infoData foreignCurrencyHeader">Foreign Currency</th>
+            </tr>
+
+            <tr>
+                <td class="infoData">Breakfast</td> 
+                <td class="infoData"><input type="number" id="breakfastIn" name="breakfast" placeholder="Enter US Dollars"></td> 
+                <td class="infoData" id="breakfastOut">---</td>
+            </tr>
+
+            <tr>
+                <td class="infoData">Lunch</td> 
+                <td class="infoData"><input type="number" id="lunchIn" name="lunch" placeholder="Enter US Dollars"></td> 
+                <td class="infoData" id="lunchOut">---</td>
+            </tr>
+
+            <tr>
+                <td class="infoData">Dinner</td> 
+                <td class="infoData"><input type="number" id="dinnerIn" name="lunch" placeholder="Enter US Dollars"></td> 
+                <td class="infoData" id="dinnerOut">---</td>
+            </tr>
+
+            <tr>
+                <td class="infoData">Snacks</td> 
+                <td class="infoData"><input type="number" id="snacksIn" name="snacks" placeholder="Enter US Dollars"></td> 
+                <td class="infoData" id="snacksOut">---</td>
+            </tr>
+
+            <tr>
+                <td class="infoData">Drinks</td> 
+                <td class="infoData"><input type="number" id="drinksIn" name="drinks" placeholder="Enter US Dollars"></td> 
+                <td class="infoData" id="drinksOut">---</td>
+            </tr>
+        </table>
+
+    </form> 
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+p {
+    color: lightcoral; 
+    text-align: center;
+}
+
+td {
+    width: 200px;
+    text-align: center;
+    color:rgb(245, 215, 169);
+}
+
+th {
+    color:darkred;
+}
+
+.center {
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.pop {
+    color: orangered; 
+    text-align: center; 
+    text-shadow: 2px 0px 5px;
+}
+
+table {
+    background-color:rgb(245, 215, 169);
+}
+
+button, select {
+    display: block;
+    background-color: lightcoral;
+    color:rgb(245, 215, 169);
+    border: 5px outset darkmagenta; 
+    border-radius: 5px;
+}
+
+.infoData {
+    background-color: lightcoral;
+    border: 5px outset darkmagenta; 
+    border-radius: 5px;
+}
+
+.info {
+    border-spacing: 3px 0px;
+}
